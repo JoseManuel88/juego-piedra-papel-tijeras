@@ -1,0 +1,8 @@
+{
+  "name": "Juego piedra, papel, tijeras",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "25ae7b77"
+}

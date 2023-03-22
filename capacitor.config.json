@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Juego piedra, papel, tijeras",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
