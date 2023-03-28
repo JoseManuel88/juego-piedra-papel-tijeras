@@ -1,3 +1,21 @@
+
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <div>
+    <ion-button (click)="jugar()">Jugar</ion-button>
+  </div>
+
+  <div *ngIf="jugando">
+    Elige tijera, piedra o papel
+    <ion-button (click)="elegir('Tijera')">tijera</ion-button>
+    <ion-button (click)="elegir('Piedra')">piedra</ion-button>
+    <ion-button (click)="elegir('Papel')">papel</ion-button>
+
+  </div>
+
+  <div *ngIf="resultado">
+    Resultado {{resultadoCompeticion}}
+    Jugada de la máquina{{jugadaAleatoria}}
+    Tu jugada {{jugadaElegida}}
+  </div>
+  <!--  <ion-router-outlet></ion-router-outlet> -->
 </ion-app>
