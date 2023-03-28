@@ -26,6 +26,7 @@ export class AppComponent {
 
   jugar() {
     this.jugando = true;
+    this.resultado = false;
     console.log(this.posibilidades[this.getRandomInt()]);
   }
 

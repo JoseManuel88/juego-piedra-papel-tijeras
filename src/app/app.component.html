@@ -1,21 +1,26 @@
 
 <ion-app>
-  <div>
-    <ion-button (click)="jugar()">Jugar</ion-button>
-  </div>
-
-  <div *ngIf="jugando">
+<div class="card">
+    <div class="button-primary">
+      <ion-button size="large" (click)="jugar()">Jugar</ion-button>
+    </div>
+  <div class="escoger" *ngIf="jugando">
     Elige tijera, piedra o papel
-    <ion-button (click)="elegir('Tijera')">tijera</ion-button>
-    <ion-button (click)="elegir('Piedra')">piedra</ion-button>
-    <ion-button (click)="elegir('Papel')">papel</ion-button>
-
   </div>
-
-  <div *ngIf="resultado">
-    Resultado {{resultadoCompeticion}}
-    Jugada de la máquina{{jugadaAleatoria}}
-    Tu jugada {{jugadaElegida}}
+    <div class="button-secundary" *ngIf="jugando">
+      <ion-button class="button" (click)="elegir('Tijera')">tijera</ion-button>
+      <ion-button class="button" (click)="elegir('Piedra')">piedra</ion-button>
+      <ion-button class="button" (click)="elegir('Papel')">papel</ion-button>
+    </div>
+      
+  
+  
+    <div class="resultado" *ngIf="resultado">
+      Resultado {{resultadoCompeticion}}
+      Jugada de la máquina{{jugadaAleatoria}}
+      Tu jugada {{jugadaElegida}}
+    </div>
+    <!--  <ion-router-outlet></ion-router-outlet> -->
   </div>
-  <!--  <ion-router-outlet></ion-router-outlet> -->
+    
 </ion-app>
